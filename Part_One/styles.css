@@ -455,16 +455,136 @@ a{
     .menuNav{
         flex-direction: column;
     }
+    .menuNav ul li{
+        font-size: 14px;
+    }
     .targ{
         margin-bottom: 13px;
     }
     .container div div button{
         display: block;
         padding: 4px;
+        border-radius: 6px;
         color: white;
         background-color: #DA3743;
     }
     .container:hover div h3{
         color: #DA3743;
+    }
+    .more button{
+        border-radius: 6px;
+    }
+}
+
+
+/* Testimonial Section */
+
+.testimonialsSection{
+    background-color: rgba(218, 55, 67, 0.15);
+}
+.TesSec{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.para{
+    flex-basis: 35%;
+}
+.contain{
+    flex-basis: 63%;
+}
+
+.para h3{
+    font-size: 42px;
+    line-height: 124%;
+    color: #363A40;
+    margin-bottom: 10px;
+}
+.para p{
+    font-size: 16px;
+    line-height: 160%;
+    color: #67758D;
+}
+.contain{
+    background-color: white;
+    color: #67758D;
+    padding: 40px;
+    border-radius: 7px;
+    display: flex;
+    gap: 10px;
+}
+.fir{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fir img{
+    width: 120px;
+    aspect-ratio: 1/1;
+}
+.fir h4{
+    font-size: 24px;
+    inline-size: 70%;
+    text-align: center;
+    margin: 10px 0;
+}
+.fir span{
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 160%;
+
+}
+.par{
+    flex-basis: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.004em;
+    font-size: 15px;
+    line-height: 160%;
+}
+@media (max-width:880px){
+    .para h3{
+        font-size: 32px;
+    }
+    .para p{
+        font-size: 11px;
+    }
+    .fir h4{
+        font-size: 16px;
+    }
+    .fir span{
+        font-size: 8px;
+    }
+    .fir img{
+        width: 90px;
+    }
+    .par{
+        font-size: 11px;
+    }
+}
+@media (max-width:500px){
+    .TesSec{
+        flex-direction: column;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .fir{
+        flex-direction: row;
+    }
+    .fir img{
+        width: 60px;
+    }
+    .fir span{
+        display: block;
     }
 }

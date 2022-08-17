@@ -212,6 +212,20 @@ a{
     left: 40px;
     top: 40px;
 }
+.fixedMessenger{
+    text-align: right;
+}
+
+.fixedMessenger img{
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: -5vw 10vw 3vw;
+    color: white;
+    font-size: 28px;
+    text-align: left;
+    border: 2px solid #DA3743;
+}
 
 @media (max-width:500px){
     .herosection{
@@ -266,5 +280,16 @@ a{
     }
     .image{
         background-image: none;
+    }
+    .fixedMessenger img{
+        /* position: relative;
+        right: 5vw;
+        bottom: 5vh; */
+        text-align: left;
+        border: 2px solid #DA3743;
+        padding: 15px;
+        border-radius: 50%;
+        margin: -3vw 5vw 1vw ;
+        font-size: 24px;
     }
 }

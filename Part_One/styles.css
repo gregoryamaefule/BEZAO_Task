@@ -94,7 +94,7 @@ a{
 }
 @media (max-width:500px){
     nav{
-        width: 90vw;
+        width: 86vw;
         display: flex;
     }
     nav div{
@@ -124,7 +124,7 @@ a{
     background-color: white;
     z-index: 20;
     width: 100vw;
-    height: 90vh;
+    height: 110vh;
     top: 0;
     right: 0;
     font-size: 12px;
@@ -232,7 +232,7 @@ a{
         background-color: #DA3743;
     }
     .hero{
-        width: 90vw;
+        width: 86vw;
         margin: 0 auto 6vh;
         padding: 2vh 0;
         min-height: fit-content;
@@ -257,15 +257,19 @@ a{
     }
     .CTA label{
         display: block;
+        font-weight: 700;
+        font-size: 11.5px;
+        line-height: 160%;
     }
     .CTA input{
         display: block;
-        padding: 15px;
+        padding: 13px;
         font-size: 14px;
         margin: 2vh 0 4vh;
         border: none;
         border-radius: 3px;
         inline-size: 90%;
+        border-radius: 5px;
     }
     .CTA button{
         display: none;
@@ -352,6 +356,8 @@ a{
     padding: 4px;
     font-size: 10px;
     cursor: pointer;
+    display: block;
+    height: 100%;
 }
 .menuContainer{
     display: grid;
@@ -448,6 +454,17 @@ a{
     }
 }
 @media (max-width:500px){
+    .menu{
+        background-color: white;
+    }
+    .divmenu{
+        width: 86vw;
+    }
+    .divmenu h4{
+        font-size: 10px;
+        margin: 0 0 0 3px;
+        padding-bottom: 3px;
+    }
     .menuContainer{
         grid-template-columns: 1fr;
 
@@ -455,11 +472,23 @@ a{
     .menuNav{
         flex-direction: column;
     }
+    .menuNav ul{
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
     .menuNav ul li{
+        background-color: white;
         font-size: 14px;
+        height: 99%;
+    }
+    .menuNav ul li:first-child{
+        font-size: 14px;
+        height: 98%;
     }
     .targ{
-        margin-bottom: 13px;
+        margin: 2px 0 13px 0;
+        font-size: 22px !important;
     }
     .container div div button{
         display: block;
@@ -472,7 +501,8 @@ a{
         color: #DA3743;
     }
     .more button{
-        border-radius: 6px;
+        border-radius: 48px;
+        width: 100px;
     }
 }
 
@@ -580,15 +610,33 @@ a{
     }
     .contain{
         flex-direction: column;
+        padding: 10px;
     }
     .fir{
         flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
     }
     .fir img{
-        width: 60px;
+        width: 30px;
     }
     .fir div span{
         display: block;
+    }
+    .fir div{
+        text-align: left;
+    }
+    .fir div h4{
+        font-size: 13px;
+        inline-size: auto;
+        text-align: center;
+        margin: 3px auto;
+    }
+    .par{
+        font-size: 10px;
+    }
+    .para h3{
+        font-size: 24px;
     }
 }
 
@@ -614,22 +662,13 @@ a{
     opacity: 0.7;
 
 }
-@media (max-width:880px){
-    .BlogDiv .tar{
-        inline-size: 90%;
-    }
-}
 .blogContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
 }
-@media (max-width:500px){
-    .blogContainer{
-       flex-wrap: wrap;
-    }
-}
+
 .blogCon{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -640,11 +679,6 @@ a{
 }
 .blogCon:hover{
     transform: scale(1.05);
-}
-.blogCon img{
-    min-width: 355.61px;
-    min-height: 235px;  
-    
 }
 .blogCon .designP{
     font-size: 12px;
@@ -679,6 +713,81 @@ a{
     font-size: 14px;
     line-height: 160%;
     color: #DA3743;
+}
+@media (min-width:880px){
+    
+.blogCon img{
+    min-width: 358.57px;
+    min-height: 235px;
+    
+}
+}
+@media (max-width:880px){
+    .BlogDiv .tar{
+        inline-size: 90%;
+    }
+    .blogCon img{
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    .blogCon{
+        width: 100%;
+        min-width: 300px;
+    }
+    .designP span, .designP {
+        font-size: 10px;
+    }
+    .blogCon div h3{
+        font-size: 12.2542px;
+    }
+    .blogCon div p{
+        font-size: 10.3475px;
+        line-height: 160%;
+        height: 52px;
+    }
+    .anchor{
+        font-size: 10.3475px;
+    }
+}
+@media (max-width:500px){
+    .BlogDiv{
+        width: 85%;
+    }
+    .blogContainer{
+        flex-direction: column;
+    }
+    .blogCon{
+        width: 100%;
+    }
+    .designP span, .designP {
+        font-size: 10px;
+    }
+    .blogCon div h3{
+        font-size: 12.2542px;
+    }
+    .blogCon div p{
+        font-size: 10.3475px;
+        line-height: 160%;
+        height: 41.95px;
+    }
+    .anchor{
+        font-size: 10.3475px;
+    }
+    .BlogDiv h3{
+        font-size: 24px;
+        line-height: 132%;
+    }
+    .BlogDiv .tar{
+        inline-size: 100%;
+        margin: 10px auto 30px;
+        font-size: 13px;
+        line-height: 160%;
+        color: #0A244E;
+        opacity: 0.7;
+    
+    }
 }
 
 /* footer section */
@@ -755,7 +864,7 @@ footer{
         padding: 5vh 0 2vh;
     }
     .footer{
-        width: 90vw;
+        width: 85vw;
     }
     .copyright{
         flex-direction: column;

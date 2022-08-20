@@ -680,3 +680,114 @@ a{
     line-height: 160%;
     color: #DA3743;
 }
+
+/* footer section */
+footer{
+    background-color: #FAFAFA;
+    padding: 10vh 0 4vh;
+}
+.footer{
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.copyright{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #B3B3B3;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    padding: 15px 0;
+}
+.copyright ul{
+    display: flex;
+    flex-basis: 160px;
+    justify-content: space-around;
+}
+.copyright span {
+    font-size: 10px;
+    line-height: 160%;
+}
+.comSer{
+    display: flex;
+    gap: 80px;
+}
+.company , .services{
+    font-size: 10px;
+    line-height: 160%;
+}
+.meals p{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    font-weight: 700;
+}
+.comSer ul li{
+    margin: 13px 0;
+    font-size: 10px;
+    line-height: 160%;
+    font-weight: 400;
+}
+.copyright ul li {
+    border-radius: 50%;
+    background-color: #F3EEE4;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.copyright ul li:nth-child(odd){
+    background: rgba(102, 102, 102, 0.08);
+} 
+.copyright ul li a img{
+    width: 13px;
+    height: 13px;
+}
+
+@media (max-width:500px){
+    footer{
+        padding: 5vh 0 2vh;
+    }
+    .footer{
+        width: 90vw;
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+    }
+    .copyright span{
+        order: 2;
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        padding: 10px 0 0 23px; 
+        border-top: 1px solid #B3B3B3;
+    }
+    .copyright ul{
+        flex-basis: auto;
+        width: 140px;
+        order: 0;
+        justify-content: space-between;
+    }
+    .meals, .comSer{
+        grid-column: 1/3;
+    }
+    .meals{
+        font-size: 20px;
+        padding: 0 0 18px;
+    }
+    .company , .services{
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .comSer ul li{
+        font-size: 12px;
+    }
+}
